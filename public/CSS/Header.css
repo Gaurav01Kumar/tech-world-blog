@@ -1,0 +1,83 @@
+/* heading  */
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+header {
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+ul li{
+    list-style: none;
+}
+.web_logo{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    color:teal;
+    font-family: 'Delicious Handrawn', cursive;
+}
+/* search box */
+.searchBox, nav ul {
+    display: flex;
+    align-items: center;
+}
+
+a > i{
+    padding: 0 20px;
+    font-size: 25px;
+    color:teal;
+}
+
+.searchBox{
+ height: 40px;
+ max-width: 570px;
+ min-width: 0;
+ width: 570px;
+ gap: 10px;
+ 
+ box-shadow:0 0 10px rgba(0,0,0,20%);
+   border-radius: 5px;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+}
+form input{
+      height: 100%;
+      width: 540px;
+      outline: none;
+      border: none;
+      padding-left:10px ;
+       
+}
+form > button{
+    border: none;
+    height: 100%;
+    width: 22px;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    color: teal;
+}
+.buttons{
+    
+}
+
+/* Styling hover text */
+ul li {
+    position: relative;
+}
+.hover_text{
+    
+display: none;
+    position: absolute;
+    top: 30px;
+    font-family: serif;
+    font-size: 16px;
+    left: 10px;
+    
+}
+.display_hover{
+display:block;
+}

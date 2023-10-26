@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily journal / login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css"
+        integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            height: 70vh;
+            background: url("/Image/form-page-background.png")no-repeat center;
+            background-size: cover;
+
+            margin: 10% 20%;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .form_wrapper {
+
+            background-color: #fff;
+            padding: 5% 5%;
+            height: 60vh;
+            border-radius: 10px;
+        }
+
+        .form_heading {
+            text-align: center;
+        }
+
+        .form_grop_container {
+            display: flex;
+            align-items: flex-start;
+
+        }
+
+        .left_group {
+            width: 400px;
+
+        }
+
+        .oAuth-group {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .o-auth {
+            width: 320px;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 0 10px;
+            column-gap: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 10%);
+            cursor: pointer;
+        }
+
+        /*
+        login form styling
+
+        */
+        .right_group {
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 10%);
+            border-left: 1px solid grey;
+            padding-left: 20px;
+
+
+
+        }
+
+        .top_heading {
+            margin-top: -20px;
+            font-size: 18px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .form-group>input {
+            width: 300px;
+            padding: 10px;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 10%);
+            margin-top: 10px;
+        }
+
+        .button_group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .button_group>button {
+            padding: 10px 30px;
+            color: #fff;
+            background-color: royalblue;
+            border: none;
+            font-weight: 700;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .button_group>a {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- form page  -->
+    <div class="form_wrapper">
+        <!-- form heading page  -->
+        <div class="form_heading">
+            <h1><a href="/">DAILY JOURNAL </a></h1>
+            <p>A place to share knowledge and better understand the world</p>
+        </div>
+        <!-- form main content  -->
+        <div class="form_grop_container">
+            <!-- left form where google auth  -->
+            <div class="left_group">
+                <p>By Continuing you indicate that you agree to DAILY JOURNAL <a href="#">Term's of Service</a> and <a
+                        href="#">Privacy and Policy</a> </p>
+                <div class="oAuth-group">
+                    <div class="o-auth">
+                        <img src="https://th.bing.com/th/id/OIP.IWkbOf-SXGMxFfACHnLX9QHaHa?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                            alt="" height="34px">
+                        <p>Continue with Google</p>
+                    </div>
+                    <div class="o-auth">
+                        <img src="https://th.bing.com/th/id/OIP.IWkbOf-SXGMxFfACHnLX9QHaHa?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                            alt="" height="40px">
+                        <p>Continue with Google</p>
+                    </div>
+                    <a href="/signup" style="color:grey;">Sign up with email </a>
+                </div>
+            </div>
+            <div class="right_group">
+                <div class="top_heading">
+                    <p>Login</p>
+                    <hr>
+                </div>
+                <!-- manual form input form  -->
+                <form action="/login" method="post">
+                    <div class="form-group">
+                        <!-- input for email -->
+                        <span>Email</span>
+                        <input type="email" placeholder="Email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <!-- input for password -->
+                        <span>Password</span>
+                        <input type="password" placeholder="Password" name="password">
+                    </div>
+                    <div class="button_group">
+                        <!-- forgot password button -->
+                        <a href="#">Forgot Password ?</a>
+                        <button type="submit"> Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

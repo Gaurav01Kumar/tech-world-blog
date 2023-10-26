@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+.newPostBox{
+    width: 46%;
+    margin-top: 30px;
+    box-shadow: 0 0 7px rgba(0,0,0,30%);
+    margin-left: 15.5%;
+    display: flex;
+    gap: 20px;
+    padding: 10px ;
+}
+.post_Option_Wrapper{
+     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.post_option{
+    
+    cursor: pointer;
+
+}
+.post_option a{
+    margin-right: 10px;
+    font-size: 19px;
+    color: slategray;
+
+}
+/* Start styling for post page  */
+.all_post{
+    padding: 2% 15.5% ;
+    height: 100%;
+    
+}
+.post_wrapper{
+    min-width:30%;
+    max-width: 65%;
+    margin: 40px 0;
+    box-shadow: 0 0 7px rgba(0,0,0,30%);
+    padding: 2%;
+}
+.user_wrapper{
+    display: flex;
+    height: 70px;
+    column-gap: 1rem;
+    
+    padding-top: 10px;
+}
+.user_wrapper > .image_box> img{
+     height: 40px;
+     width: 50px;
+     border-radius: 50%;
+}
+.userDetails{
+    height: 40px;
+    
+}
+.userDetails > h5{
+    font-size: 15px;
+}
+.userDetails > p{
+    color: grey;
+}
+.postTitle h3{
+    font-family: serif;   
+    font-weight: 800;
+    font-size: 24px;
+}
+.post_description p{
+    font-size: 16px;
+    margin-top: 2%;
+    color: grey;
+}
+.post_Footer{
+    padding-top:3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.postInfo{
+    margin-top: 2%;
+    display: flex;
+    column-gap: 40px;
+    
+}
+.postInfo .btn {
+    color: grey;
+    font-size: 20px;
+}
+.postInfo .btn:first-child{
+    color: rgb(159, 224, 224);
+}
+.postInfo p > i{
+    font-size: 19px;
+    margin-right: 10px;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+}
+.postInfo p > i:hover{
+    color: red;
+}
+.post_date span{
+    color: grey;
+}

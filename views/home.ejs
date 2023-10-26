@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/Style.css">
+</head>
+<body>
+    <%- include("partials/header") -%> 
+     <%- include("partials/featureHeader") -%>
+     <div class="newPostBox">
+        <div class="user_logo">
+            <img src="https://th.bing.com/th/id/OIP.e1KNYwnuhNwNj7_-98yTRwHaF7?w=243&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" height="40"
+            >
+        </div>
+        <div class="post_Option_Wrapper">
+            <div class="post_option">
+                <a href="/askQuestion"><i class="fa fa-question"></i><span>Ask</span></a>
+            </div>
+            <div class="post_option">
+                <a href=""><i class="fa fa-pen-to-square"></i><span>Answer</span></a>
+            </div>
+            <div class="post_option">
+                <a href="/compose"><i class="fa fa-pen"></i><span>Post</span></a>
+            </div>
+        </div>
+     </div>
+     <div class="all_post">
+        <%- include("post") -%>
+        
+     </div>
+    <%- include("partials/footer") -%>  
+</body>
+</html>
+

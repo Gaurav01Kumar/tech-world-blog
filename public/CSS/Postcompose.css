@@ -1,0 +1,95 @@
+.post_compose {
+    width: 50%;
+    height: 100%;
+
+    margin: 0% 18%;
+    padding: 1%;
+
+}
+
+.post_compose_heading {
+    width: 100%;
+}
+
+.post_compose_heading>h5 {
+    text-align: left;
+    font-size: 35px;
+    color: rgb(85, 82, 82);
+}
+
+.post_compose_heading>input {
+
+    width: 100%;
+    background-color: rgb(218, 217, 217);
+    font-size: 27px;
+    padding: 12px 15px;
+    margin-top: -50px;
+}
+
+.post_input_box {
+    width: 90%;
+
+
+}
+
+.post_input_box form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image_upload {
+    margin-top: 4%;
+}
+
+.image_upload>input {
+    width: 100%;
+    background-color: rgb(218, 217, 217);
+    padding: 12px 15px;
+
+}
+
+.post_area {
+    width: 100%;
+}
+
+.post_area>textarea {
+    width: 100%;
+    background-color: rgb(218, 217, 217);
+    padding: 10px;
+    margin-top: 5%;
+    height: 200px;
+    border: none;
+    font-size: 20px;
+
+}
+
+.terms_section {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.terms_section>input {
+    height: 30px;
+    width: 20px;
+    margin-bottom: 12px;
+}
+
+.terms_section>p {
+    font-size: 18px;
+    margin-left: 5px;
+    color: rgb(52, 51, 51);
+
+}
+
+button {
+    padding: 5px 35px;
+    font-size: 19px;
+    background-color: #DE3F3F;
+    color: lightslategray;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
