@@ -6,13 +6,25 @@ on:
         branches: [ main ]
 jobs:
     build:
+        env:
+          CI : true
+          MONGO_URL: mongodb://localhost/blog
+        strategy:
+            matrix: 
+                node-version: [18.x,20.x]
+                mongodb-versiion : ['4.2','4.4']
+
         runs-on: windows-latest
         steps:
             - uses : actions/checkout@v3
             - name : Use Node.js version 20
               uses : actions/setup-node@v3
               with : 
-                 node-version : '20' 
+                 node-version : ${{matrix.node-version}} 
+            - name : Use MongoDB from GitHub actions  
+              uses : supercharge/mongodb-github-action@1.6.0
+              with:
+                mongodb-version : ${{matrix.mongodb-versiion}}
             - run : npm install 
             
 
