@@ -1,20 +1,21 @@
 
 // require to connected with database 
-require("./controler/connection")
+require("./src/db/connection")
 const express = require("express");
 const bodyParser = require("body-parser");
-
+const cookieParser=require("cookie-parser")
 const ejs = require("ejs");
 const app = express();
 const  _=require("lodash")
-const UserRouter=require("./route/User")
+const Route=require("./src/route/v1")
 app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 app.use(express.json())
+app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: true }));
 //
-
+app.use("api/v1",Route)
 let posts = [];
 //chalenge 1
 
@@ -103,7 +104,7 @@ app.get("/user-dashboard",(req,res)=>{
 
 // router for userRouter 
 
-app.use(UserRouter)
+
 
 //server is listening 
 
